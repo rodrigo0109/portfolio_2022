@@ -5,9 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './Componentes/Home/Home';
+import Nav from './Componentes/Nav/Nav';
 function App() {
   return (
     <Router>
+      <Nav />
         <Switch>
         <Route path="/" exact component={Home}/> 
         </Switch>
@@ -15,3 +17,4 @@ function App() {
   );
 }
 export default App;
+

@@ -76,6 +76,10 @@
     margin-left: 40px;
 }
 
+.tech img {
+    height: 42px;
+}
+
 .tech .icon {
     font-size: 42px;
 }

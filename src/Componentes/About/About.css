@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Manrope', sans-serif;
+}
 .about {
     width: 100%;
     height: 100vh;
@@ -8,13 +10,36 @@
 }
 
 .text_container {
-    width: 800px;
+    width: 600px;
     height: 600px;
     color: #81AFDD;
-    /* border: 1px solid red; */
 }
 
 .text_container h1 {
-    font-family: 'Manrope', sans-serif;
     font-weight: 800;
+    font-size: 36px;
+}
+
+.text_container p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img_container {
+    width: 400px;
+    height: 300px;
+    margin-top: 70px;
+    border-radius: 10px;
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgb(7, 67, 128) 85%, transparent 100%);
+}
+
+.text_container img {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    transform: rotate(12deg);
+    transition: all 0.5s ease-in-out;
+}
+.text_container img:hover {
+    transform: rotate(0deg);
 }

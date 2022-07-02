@@ -1,12 +1,16 @@
 import React from 'react'
+import Image from '../../images/work.png'
 import './About.css'
 
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
       <div className='text_container'>
         <h1>About</h1>
-        <p>lLorem ipsum dolor sit amet consectetur adipiscing elit semper, nunc a tortor sem non penatibus risus, torquent vitae dictumst quisque ultricies tempus conubia. Elementum dapibus fusce pharetra enim magnis fermentum, hendrerit lectus sapien venenatis cras, proin phasellus ornare quis ac. Ultrices natoque bibendum nisi dui placerat rhoncus, sed dictum porta netus per, ridiculus faucibus eu curae in.</p>
+        <p>Hi, I´m Rodrigo and I am 28 years old. I am a Full Stack Developer from Buenos Aires, Argentina and currently i'm studying Systems Analyst at IRSO (Raúl Scalabrini Ortiz Institute). Since I graduated from school as an electronic technician I was interested in programming, especially with Javascript.</p>
+        <div className='img_container'>
+          <img src={Image} alt="about"/>
+        </div>
       </div>
     </div>
   )

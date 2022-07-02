@@ -1,3 +1,6 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
 
 .hero {
     width: 100%;
@@ -7,34 +10,76 @@
     align-items: center;
     justify-content: space-evenly;
     background:radial-gradient(circle at 3% -25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    position: relative;
     /* border: 1px solid red; */
 }
 
-.hero .hero_intro_container {
-    font-family: 'Manrope', sans-serif;
-}
-
 .hero_intro_container h1 {
+    line-height: 70px;
+    font-size: 52px;
     font-weight: 800;
     background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* border: 1px solid red; */
 }
 
+.subtitle-action_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.subtitle-action_container h3 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #81AFDD;
+}
+
+.subtitle-action_container a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #FF4820;
+    color: #FFE8E3;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.subtitle-action_container a:hover {
+    background: #cc4b2f;
+}
 
 .img_intro_container {
     width: 350px;
     height: 400px;
-    /* border: 1px solid #111; */
-    /* background-image: url(../../images/profile.jpeg);
-    background-size: cover; */
-    /* -webkit-mask: url(../../images/mask2.png);
-    -webkit-mask-size: 100%; */
 }
-
 
 .img_intro_container img {
     width: 350px;
     height: auto;
+}
+
+.language {
+    position: absolute;
+    top: 50PX;
+    right: 20%;
+    /* border: 1px solid red; */
+}
+
+.language button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #81AFDD;
+    cursor: pointer;
 }

@@ -1,18 +1,21 @@
 import React from 'react'
-import Prueba from '../../videos/rain.mp4'
 import './Card.css'
 
-const Card = () => {
+const Card = ({title, text, video}) => {
+
   return (
     <div className='card'>
         <video autoPlay loop muted>
-            <source src={Prueba} />
+            <source src={video} />
         </video>
         <div className='card_content'>
-            <p>asdasdasdsdsd</p>
+            <div className='text_container-card'>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
             <div className='btn_container'>
-                <nutton className='btn_code'>GitHub</nutton>
-                <nutton className='btn_demo'>Live Demo</nutton>
+                <button className='btn_code'>GitHub</button>
+                <button className='btn_demo'>Live Demo</button>
             </div>
         </div>
     </div>

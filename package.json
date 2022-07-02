@@ -20,13 +20,15 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.7",
     "react-slick": "^0.29.0",
     "react-tagcloud": "^2.2.0",
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
     "tagcloud": "^1.1.0-1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "swiper": "^8.2.6"
   },
   "scripts": {
     "start": "react-scripts start",

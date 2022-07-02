@@ -1,11 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBootstrap, faCss3, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faHtml5, faJs, faReact, faNode } from '@fortawesome/free-brands-svg-icons';
+import Image from '../../images/postgre.png'
 import './Skills.css'
 
 const Skills = () => {
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'>
       <div className='skills_container'>
         <h1>Skills</h1>
 
@@ -14,8 +15,8 @@ const Skills = () => {
             <div></div>
             <p>Frontend</p>
           </div>
-          <div className='tech'><FontAwesomeIcon className='icon' icon={faHtml5} /><p>HTML</p></div>
-          <div className='tech'><FontAwesomeIcon className='icon' icon={faCss3} /><p>CSS</p></div>
+          <div className='tech'><FontAwesomeIcon className='icon' icon={faHtml5} /><p>Html</p></div>
+          <div className='tech'><FontAwesomeIcon className='icon' icon={faCss3} /><p>Css</p></div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faJs} /><p>JavaScript</p></div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faReact} /><p>React</p></div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faBootstrap} /><p>Bootstrap</p></div>
@@ -26,9 +27,8 @@ const Skills = () => {
             <div></div>
             <p>Backend</p>
           </div>
-          <div className='tech'><FontAwesomeIcon className='icon' icon={faHtml5} /><p>NodeJs</p></div>
-          <div className='tech'><FontAwesomeIcon className='icon' icon={faCss3} /><p>PostgresSQL</p></div>
-          <div className='tech'><FontAwesomeIcon className='icon' icon={faJs} /><p>JavaScript</p></div>
+          <div className='tech'><FontAwesomeIcon className='icon' icon={faNode} /><p>NodeJs</p></div>
+          <div className='tech'><img src={Image} alt='postgresql' /><p>PostgreSQL</p></div>
         </div>
       </div>
     </div>
