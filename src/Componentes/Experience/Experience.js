@@ -5,8 +5,8 @@ import './Experience.css'
 
 const Experience = () => {
   return (
-    <div className='experience' id='experience'>
-      <div className='cards_container'>
+    <div className='experience' id='experience' >
+      <div className='cards_container' data-aos="fade-up">
         <h1>Experience</h1>
         <div className='cards'>
           {

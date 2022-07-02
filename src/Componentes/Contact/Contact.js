@@ -58,8 +58,8 @@ const Contact = () => {
     ]
 
     return (
-        <div className='contact' id='contact'>
-            <div className='contact_container'>
+        <div className='contact' id='contact' >
+            <div className='contact_container' data-aos="fade-right">
                 <div className='form_container'>
                     <h1>Contact Me</h1>
                     <form className='form' method="POST" id="form" name="contact" netlify='true'>
@@ -79,6 +79,7 @@ const Contact = () => {
                         spaceBetween={40}
                         slidesPerView={1}
                         pagination={{ clickable: true }}
+                        data-aos="fade-left"
                     >
                         {
                             testimonial.map(({ name, text, github, linkedin }, i) => (
