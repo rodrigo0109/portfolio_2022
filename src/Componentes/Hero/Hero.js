@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../images/pic2.png'
+import Image from '../../images/pic4.png'
 import Resume from '../../file/resume.pdf'
 import './Hero.css'
 
