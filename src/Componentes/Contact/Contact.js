@@ -67,7 +67,7 @@ const Contact = ({language}) => {
                         :
                         <h1>Hablemos</h1>
                     }
-                    <form className='form' method="POST" id="form" name="contact" netlify='true'>
+                    <form className='form' method="POST" id="form" name="contact" data-netlify='true'>
                         {
                             <span className='error-message'>{error ? 'INVALID NAME OR EMAIL' : ''}</span>
                         }
