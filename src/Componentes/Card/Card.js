@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.css'
 
-const Card = ({title, titleEs, text, textEs, video, language}) => {
+const Card = ({title, titleEs, text, textEs, video,gitHub, demo, language}) => {
 
   return (
     <div className='card'>
@@ -14,8 +14,8 @@ const Card = ({title, titleEs, text, textEs, video, language}) => {
               <p>{language === 'EN' ? text : textEs}</p>
             </div>
             <div className='btn_container'>
-                <button className='btn_code'>GitHub</button>
-                <button className='btn_demo'>{language === 'EN' ? 'Live Demo' : 'Ver Demo'}</button>
+                <a href={gitHub} target='_blank' rel="noopener noreferrer" className='btn_code'>GitHub</a>
+                <a href={demo} target='_blank' rel="noopener noreferrer" className='btn_demo'>{language === 'EN' ? 'Live Demo' : 'Ver Demo'}</a>
             </div>
         </div>
     </div>

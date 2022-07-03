@@ -23,7 +23,9 @@ const Experience = ({language}) => {
                 titleEs={c.titleEs}
                 text={c.text} 
                 textEs={c.textEs}
-                video={c.video} 
+                video={c.video}
+                gitHub={c.gitHub}
+                demo={c.demo} 
                 language={language}
               />
             ))
