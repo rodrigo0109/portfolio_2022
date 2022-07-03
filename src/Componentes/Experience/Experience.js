@@ -6,7 +6,7 @@ import './Experience.css'
 const Experience = () => {
   return (
     <div className='experience' id='experience' >
-      <div className='cards_container' data-aos="fade-up">
+      <div className='cards_container' data-aos="fade-up" data-aos-duration="2000">
         <h1>Experience</h1>
         <div className='cards'>
           {

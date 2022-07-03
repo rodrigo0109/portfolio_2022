@@ -15,7 +15,7 @@
     width: 80%;
     height: 80%;
     text-align: center;
-    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,29 +36,32 @@
 
 .skill_title {
     width: 50px;
-    height:auto;
+    height: auto;
     position: absolute;
     left: 0;
     top: 0;
     text-align: left;
-    /* border: 1px solid red; */
+    /*     border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
+
 .skill_title div {
     width: 80%;
     height: 3px;
-    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    ;
 }
+
 .skill_title p {
     font-size: 16px;
     font-weight: 800;
     color: #fff;
 }
 
-.tech_container {
+.tech_container-front {
     width: 70%;
     height: 150px;
     display: flex;
@@ -68,7 +71,19 @@
     color: #81AFDD;
     position: relative;
     margin-top: 40px;
-    /* border: 1px solid red; */ 
+    /* border: 1px solid red; */
+}
+.tech_container-back {
+    width: 70%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #81AFDD;
+    position: relative;
+    margin-top: 40px;
+    /* border: 1px solid red; */
 }
 
 .tech {
@@ -82,4 +97,69 @@
 
 .tech .icon {
     font-size: 42px;
+}
+
+@media screen and (max-width:900px) {
+    .tech .icon {
+        font-size: 26px;
+    }
+
+    .tech p {
+        font-size: 12px;
+    }
+
+    .skills_container h1 {
+        font-size: 32px;
+    }
+
+    .tech img {
+        height: 26px;
+    }
+
+    .skill_title p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .skills_container h1 {
+        font-size: 26px;
+    }
+
+    .skill_title p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .skills {
+        height: auto;
+    }
+
+    .skills_container {
+        height: 700px;
+    }
+
+    .skill_title {
+        top: -30px;
+    }
+
+    .tech_container-front {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        /* border: 1px solid red; */
+    }
+    .tech_container-back {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: 30px;
+    }
+
+    .tech {
+        margin-left: 0;
+    }
 }

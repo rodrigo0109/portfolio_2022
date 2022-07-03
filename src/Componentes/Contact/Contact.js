@@ -59,7 +59,7 @@ const Contact = () => {
 
     return (
         <div className='contact' id='contact' >
-            <div className='contact_container' data-aos="fade-right">
+            <div className='contact_container' data-aos="fade-right" data-aos-duration="2000">
                 <div className='form_container'>
                     <h1>Contact Me</h1>
                     <form className='form' method="POST" id="form" name="contact" netlify='true'>

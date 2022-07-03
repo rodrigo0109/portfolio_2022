@@ -70,3 +70,10 @@
     color: #040C18;
     border: none;
 }
+
+
+@media screen and (max-width:700px) {
+    .card {
+        margin-bottom: 40px;
+    }
+}

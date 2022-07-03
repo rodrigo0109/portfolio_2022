@@ -7,10 +7,10 @@ import './Skills.css'
 const Skills = () => {
   return (
     <div className='skills' id='skills' >
-      <div className='skills_container' data-aos="fade-up">
+      <div className='skills_container' data-aos="fade-up" data-aos-duration="2000">
         <h1>Skills</h1>
 
-        <div className='tech_container'>
+        <div className='tech_container-front'>
           <div className='skill_title'>
             <div></div>
             <p>Frontend</p>
@@ -22,7 +22,7 @@ const Skills = () => {
           <div className='tech'><FontAwesomeIcon className='icon' icon={faBootstrap} /><p>Bootstrap</p></div>
         </div>
 
-        <div className='tech_container'>
+        <div className='tech_container-back'>
           <div className='skill_title'>
             <div></div>
             <p>Backend</p>

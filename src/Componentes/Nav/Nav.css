@@ -55,3 +55,17 @@
     background: rgba(0, 0, 0, 0.3);
     color: #bfd2e6;
 }
+
+@media screen and (max-width:450px) {
+    .nav {
+        width: 200px;
+        height: 30px;
+        margin: auto;
+        top: 90%;
+        right: 0;
+        left: 0;        
+    }
+    .nav-menu {
+        flex-direction: row;
+    }
+}

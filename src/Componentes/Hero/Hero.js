@@ -10,7 +10,7 @@ const Hero = () => {
         <button>EN</button>
         <button>ES</button>
       </div>
-      <div className='hero_intro_container' data-aos="fade-up">
+      <div className='hero_intro_container' data-aos="fade-up" data-aos-duration="2000">
         <h1>Hi, i´m Rodrigo Pérez</h1>
         <div className='subtitle-action_container'>
           <h3>Full Stack Developer</h3>
