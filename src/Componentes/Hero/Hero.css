@@ -78,12 +78,19 @@
     /* border: 1px solid red; */
 }
 
-.language button {
+.language .btn {
     border: none;
     outline: none;
     background: transparent;
     color: #81AFDD;
     cursor: pointer;
+}
+.language .btn_active {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: #FF4820;
 }
 
 @media screen and (max-width:1200px) {

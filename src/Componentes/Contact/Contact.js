@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 
 import './Contact.css'
 
-const Contact = () => {
+const Contact = ({language}) => {
 
     const [input, setInput] = useState({
         name: '',
@@ -61,15 +61,20 @@ const Contact = () => {
         <div className='contact' id='contact' >
             <div className='contact_container' data-aos="fade-right" data-aos-duration="2000">
                 <div className='form_container'>
-                    <h1>Contact Me</h1>
+                    {
+                        language === 'EN' ?
+                        <h1>Let´s talk</h1>
+                        :
+                        <h1>Hablemos</h1>
+                    }
                     <form className='form' method="POST" id="form" name="contact" netlify='true'>
                         {
                             <span className='error-message'>{error ? 'INVALID NAME OR EMAIL' : ''}</span>
                         }
-                        <input className='field' type="text" placeholder='Your name' name='name' value={input.name} onChange={handleInputChange} autoComplete='off' />
-                        <input className='field' type="email" placeholder='Your email' name='email' value={input.email} onChange={handleInputChange} autoComplete='off' />
-                        <textarea type="text" placeholder='Your message' />
-                        <input type="submit" className="btn_send" value="Send" disabled={error} />
+                        <input className='field' type="text" placeholder={language === 'EN' ? 'Your name' : 'Tu nombre' } name='name' value={input.name} onChange={handleInputChange} autoComplete='off' />
+                        <input className='field' type="email" placeholder={language === 'EN' ? 'Your email' : 'Tu email' } name='email' value={input.email} onChange={handleInputChange} autoComplete='off' />
+                        <textarea type="text" placeholder={language === 'EN' ? 'Your message' : 'Tu mensaje' } />
+                        <input type="submit" className="btn_send" value={language === 'EN' ? 'Send' : 'Enviar' } disabled={error} />
                     </form>
                 </div>
                 <section className='section'>

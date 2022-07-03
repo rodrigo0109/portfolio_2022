@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
 import Experience from '../Experience/Experience'
@@ -8,13 +9,15 @@ import './Home.css'
 
 const Home = () => {
 
+    const [language, setLanguage] = useState('EN')
+
     return (
         <div className='home' id='/'>
-            <Hero />
-            <About />
-            <Skills />
-            <Experience />
-            <Contact />
+            <Hero language={language} setLanguage={setLanguage} />
+            <About language={language} />
+            <Skills language={language} />
+            <Experience language={language} />
+            <Contact language={language} />
         </div>
 
     )

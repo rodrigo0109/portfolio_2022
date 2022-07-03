@@ -4,12 +4,16 @@ import { faBootstrap, faCss3, faHtml5, faJs, faReact, faNode } from '@fortawesom
 import Image from '../../images/postgre.png'
 import './Skills.css'
 
-const Skills = () => {
+const Skills = ({language}) => {
   return (
     <div className='skills' id='skills' >
       <div className='skills_container' data-aos="fade-up" data-aos-duration="2000">
-        <h1>Skills</h1>
-
+        {
+          language === 'EN' ?
+          <h1>Skills</h1>
+          :
+          <h1>Tecnologías</h1>
+        }
         <div className='tech_container-front'>
           <div className='skill_title'>
             <div></div>
