@@ -2,6 +2,8 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBootstrap, faCss3, faHtml5, faJs, faReact, faNode } from '@fortawesome/free-brands-svg-icons';
 import Image from '../../images/postgre.png'
+import Image2 from '../../images/redux.png'
+import Image3 from '../../images/express.png'
 import './Skills.css'
 
 const Skills = ({language}) => {
@@ -23,6 +25,7 @@ const Skills = ({language}) => {
           <div className='tech'><FontAwesomeIcon className='icon' icon={faCss3} /><p>Css</p></div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faJs} /><p>JavaScript</p></div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faReact} /><p>React</p></div>
+          <div className='tech'><img src={Image2} alt='redux' /><p>Redux</p></div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faBootstrap} /><p>Bootstrap</p></div>
         </div>
 
@@ -32,6 +35,7 @@ const Skills = ({language}) => {
             <p>Backend</p>
           </div>
           <div className='tech'><FontAwesomeIcon className='icon' icon={faNode} /><p>NodeJs</p></div>
+          <div className='tech'><img src={Image3} alt='express' /><p>ExpressJs</p></div>
           <div className='tech'><img src={Image} alt='postgresql' /><p>PostgreSQL</p></div>
         </div>
       </div>
