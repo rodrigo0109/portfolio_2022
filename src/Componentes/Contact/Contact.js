@@ -67,10 +67,11 @@ const Contact = ({language}) => {
                         :
                         <h1>Hablemos</h1>
                     }
-                    <form className='form' method="POST" id="form" name="contact" data-netlify='true'>
+                    <form className='form' method="POST" id="form" name="contact-form" data-netlify='true'>
                         {
                             <span className='error-message'>{error ? 'INVALID NAME OR EMAIL' : ''}</span>
                         }
+                        <input type="hidden" name="form-name" value="contact-form" />
                         <input className='field' type="text" placeholder={language === 'EN' ? 'Your name' : 'Tu nombre' } name='name' value={input.name} onChange={handleInputChange} autoComplete='off' />
                         <input className='field' type="email" placeholder={language === 'EN' ? 'Your email' : 'Tu email' } name='email' value={input.email} onChange={handleInputChange} autoComplete='off' />
                         <textarea type="text" placeholder={language === 'EN' ? 'Your message' : 'Tu mensaje' } />
