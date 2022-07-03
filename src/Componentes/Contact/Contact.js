@@ -75,7 +75,7 @@ const Contact = ({language}) => {
                         <input className='field' type="text" placeholder={language === 'EN' ? 'Your name' : 'Tu nombre' } name='name' value={input.name} onChange={handleInputChange} autoComplete='off' />
                         <input className='field' type="email" placeholder={language === 'EN' ? 'Your email' : 'Tu email' } name='email' value={input.email} onChange={handleInputChange} autoComplete='off' />
                         <textarea type="text" placeholder={language === 'EN' ? 'Your message' : 'Tu mensaje' } />
-                        <input type="submit" className="btn_send" value={language === 'EN' ? 'Send' : 'Enviar' } disabled={error} />
+                        <input name='message' type="submit" className="btn_send" value={language === 'EN' ? 'Send' : 'Enviar' } disabled={error} />
                     </form>
                 </div>
                 <section className='section'>
