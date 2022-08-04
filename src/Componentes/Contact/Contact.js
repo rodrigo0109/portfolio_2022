@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Pagination } from 'swiper';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Profile1 from '../../images/profile.jpeg'
 
@@ -14,6 +14,7 @@ import './Contact.css'
 
 const Contact = ({language}) => {
 
+    SwiperCore.use([Autoplay])
     const [input, setInput] = useState({
         name: '',
         email: '',
@@ -86,6 +87,8 @@ const Contact = ({language}) => {
                         slidesPerView={1}
                         pagination={{ clickable: true }}
                         data-aos="fade-left"
+                        autoplay={{ delay: 2000 }}
+                        loop
                     >
                         {
                             testimonial.map(({ name, text, github, linkedin }, i) => (
