@@ -13,6 +13,7 @@
     max-width: 600px;
     height: 600px;
     color: #81AFDD;
+    text-align: justify;
 }
 
 .text_container h1 {
@@ -21,7 +22,7 @@
 }
 
 .text_container p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
 }
 

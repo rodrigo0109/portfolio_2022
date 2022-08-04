@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from '../../images/pic4.png'
 import Resume from '../../file/resume.pdf'
+import Cv from '../../file/cv.pdf'
 import './Hero.css'
 
 const Hero = ({language, setLanguage}) => {
@@ -24,7 +25,7 @@ const Hero = ({language, setLanguage}) => {
         }
         <div className='subtitle-action_container'>
           <h3>Full Stack Developer</h3>
-          <a href={Resume} download="Resume_Rodrig_Perez.pdf" target="_blank" rel="noopener noreferrer">{ language === 'EN' ? 'Resume' : 'CV' }</a>
+          <a href={language === 'EN' ? Resume : Cv} download={language === 'EN' ? "Resume_Rodrigo_Perez.pdf" : 'CV_Rodrigo_Perez.pdf'} target="_blank" rel="noopener noreferrer">{ language === 'EN' ? 'Resume' : 'CV' }</a>
         </div>
       </div>
       <div className='img_intro_container' data-aos="fade-up">
