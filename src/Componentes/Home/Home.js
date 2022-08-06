@@ -12,7 +12,7 @@ const Home = () => {
     const [language, setLanguage] = useState('EN')
 
     return (
-        <div className='home' id='/'>
+        <div className='home'>
             <Hero language={language} setLanguage={setLanguage} />
             <About language={language} />
             <Skills language={language} />

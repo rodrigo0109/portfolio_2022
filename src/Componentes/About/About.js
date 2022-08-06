@@ -1,10 +1,14 @@
 import React from 'react'
+import { useNav } from '../../hooks/useNav'
 import Image from '../../images/work.png'
 import './About.css'
 
 const About = ({ language }) => {
+
+  const aboutRef = useNav('About')
+
   return (
-    <div className='about' id='about' >
+    <div ref={aboutRef} className='about' id='about' >
       <div className='text_container' data-aos="fade-up" data-aos-duration="2000">
         {
           language === 'EN' ?

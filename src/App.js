@@ -6,15 +6,18 @@ import {
 } from "react-router-dom";
 import Home from './Componentes/Home/Home';
 import Nav from './Componentes/Nav/Nav';
+import NavProvider from './Componentes/context/NavContext';
 
 function App() {
 
   return (
     <Router>
-      <Nav />
-        <Switch>
-        <Route path="/" exact component={Home}/> 
-        </Switch>
+      <NavProvider>
+        <Nav />
+          <Switch>
+          <Route path="/" exact component={Home}/> 
+          </Switch>
+      </NavProvider>
     </Router>
   );
 }

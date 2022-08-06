@@ -11,8 +11,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import './Contact.css'
+import { useNav } from '../../hooks/useNav';
 
 const Contact = ({language}) => {
+
+    const contactRef = useNav('Contact')
 
     SwiperCore.use([Autoplay])
     const [input, setInput] = useState({
@@ -59,7 +62,7 @@ const Contact = ({language}) => {
     ]
 
     return (
-        <div className='contact' id='contact' >
+        <div ref={contactRef} className='contact' id='contact' >
             <div className='contact_container' data-aos="fade-right" data-aos-duration="2000">
                 <div className='form_container'>
                     {

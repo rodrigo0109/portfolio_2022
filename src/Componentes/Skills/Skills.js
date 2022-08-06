@@ -5,10 +5,14 @@ import Image from '../../images/postgre.png'
 import Image2 from '../../images/redux.png'
 import Image3 from '../../images/express.png'
 import './Skills.css'
+import { useNav } from '../../hooks/useNav';
 
 const Skills = ({language}) => {
+
+  const skillsRef = useNav('Skills')
+
   return (
-    <div className='skills' id='skills' >
+    <div ref={skillsRef} className='skills' id='skills' >
       <div className='skills_container' data-aos="fade-up" data-aos-duration="2000">
         {
           language === 'EN' ?

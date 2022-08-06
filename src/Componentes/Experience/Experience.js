@@ -4,11 +4,15 @@ import { projects } from '../data/data'
 import SwiperCore, { Pagination, Autoplay, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Experience.css'
+import { useNav } from '../../hooks/useNav';
 
 const Experience = ({ language }) => {
   SwiperCore.use([Autoplay])
+
+  const experienceRef = useNav('Experience')
+
   return (
-    <div className='experience' id='experience' >
+    <div ref={experienceRef} className='experience' id='experience' >
       <div className='cards_container' data-aos="fade-up" data-aos-duration="2000">
         {
           language === 'EN' ?
