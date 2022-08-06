@@ -1,13 +1,18 @@
 import React from 'react'
 import './Card.css'
 
-const Card = ({title, titleEs, text, textEs, video,gitHub, demo, language}) => {
+const Card = ({title, titleEs, text, textEs, video, img, gitHub, demo, language}) => {
 
   return (
     <div className='card'>
+      {
+        window.innerWidth > 450 ?
         <video autoPlay loop muted>
             <source src={video} />
         </video>
+        :
+        <img src={img} alt={language === 'EN' ? title : titleEs} />
+      }
         <div className='card_content'>
             <div className='text_container-card'>
               <h3>{language === 'EN' ? title : titleEs}</h3>

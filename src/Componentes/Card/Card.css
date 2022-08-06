@@ -11,12 +11,15 @@
     align-items: center;
     justify-content: space-between;
     transition: all 0.6s ease-in-out;
-}
-.card:hover {
-    background: #05386b;
+    border-radius: 10px;
 }
 
 .card video {
+    width: 100%;
+    height: auto;
+}
+
+.card img {
     width: 100%;
     height: auto;
 }
@@ -64,12 +67,21 @@
     border: 1px solid #49AEEA;
     background: transparent;
     color: #49AEEA;
+    transition: all 0.3s ease;
+}
+.btn_code:hover {
+    border: 1px solid #1099e9;
+    color: #1099e9;
 }
 
 .btn_demo {
     background: #49AEEA;
     color: #040C18;
     border: none;
+    transition: all 0.3s ease;
+}
+.btn_demo:hover {
+    background: #1099e9;
 }
 
 

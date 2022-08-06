@@ -61,7 +61,7 @@ const Experience = ({ language }) => {
                           titleEs={c.titleEs}
                           text={c.text}
                           textEs={c.textEs}
-                          video={c.video}
+                          img={c.img}
                           gitHub={c.gitHub}
                           demo={c.demo}
                           language={language}

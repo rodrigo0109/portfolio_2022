@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Profile1 from '../../images/profile.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { testimonial } from '../data/data';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -46,21 +46,6 @@ const Contact = ({language}) => {
         }
     }
 
-    const testimonial = [
-        {
-            name: 'Rodrigo',
-            text: "sasd asd asd dasd sd  dsda sd ds ds adsd d sadasd d sd asd",
-            github: 'https://github.com/rodrigo0109',
-            linkedin: 'https://linkedin.com/in/rodrigo-perez-54073314b'
-        },
-        {
-            name: 'Rodrigo',
-            text: "sasd asd asd dasd sd  dsda sd ds ds adsd d sadasd d sd asd",
-            github: 'https://github.com/rodrigo0109',
-            linkedin: 'https://linkedin.com/in/rodrigo-perez-54073314b'
-        }
-    ]
-
     return (
         <div ref={contactRef} className='contact' id='contact' >
             <div className='contact_container' data-aos="fade-right" data-aos-duration="2000">
@@ -84,31 +69,30 @@ const Contact = ({language}) => {
                 </div>
                 <section className='section'>
                     <Swiper className='testimonial'
-                        // install Swiper modules
                         modules={[Pagination]}
                         spaceBetween={40}
                         slidesPerView={1}
                         pagination={{ clickable: true }}
                         data-aos="fade-left"
-                        autoplay={{ delay: 2000 }}
+                        autoplay={{ delay: 4000 }}
                         loop
                     >
                         {
-                            testimonial.map(({ name, text, github, linkedin }, i) => (
+                            testimonial.map((t, i) => (
                                 <SwiperSlide
                                     className='testimonial_container'
                                     key={i}
                                 >
                                     <div className='profile_container'>
-                                        <img src={Profile1} alt={name}/>
+                                        <img src={t.img} alt={t.name}/>
                                     </div>
                                     <div className='testimonial_text'>
-                                        <p className='testimonial_name'>{name}</p>
-                                        <p>{text}</p>
+                                        <p className='testimonial_name'>{t.name}</p>
+                                        <p>{language === 'EN' ? t.text : t.textEs}</p>
                                     </div>
                                     <div className='testimonial_icons'>
-                                        <a href={github} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
-                                        <a href={linkedin} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
+                                        <a href={t.github} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
+                                        <a href={t.linkedin} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
                                     </div>
                                 </SwiperSlide>
                             ))

@@ -141,14 +141,15 @@
 
 .testimonial_text {
     width: 80%;
-    height: 150px;
+    min-height: 150px;
+    height: auto;
     margin: auto;
     text-align: center;
     font-weight: 600;
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
     color: #81AFDD;
-    /* border: 1px solid red; */
+/*     border: 1px solid red; */
 }
 
 .testimonial_name {
