@@ -3,6 +3,8 @@ import Weather from '../../videos/card_weather.mp4'
 import CountriesImg from '../../images/countries.png'
 import WeatherImg from '../../images/weather.png'
 import Gianfranco from '../../images/devs/gian.jpeg'
+import Flor from '../../images/devs/flor.jpeg'
+import Martin from '../../images/devs/martin.jpeg'
 
 export const projects = [
     {
@@ -37,11 +39,19 @@ export const testimonial = [
         linkedin: 'https://www.linkedin.com/in/gianfranco-gobbi'
     },
     {
-        name: 'Rodrigo',
-        text: "sasd asd asd dasd sd  dsda sd ds ds adsd d sadasd d sd asd",
-        textEs: "sasd asd asd dasd sd  dsda sd ds ds adsd d sadasd d sd asd",
-        img: Gianfranco,
-        github: 'https://github.com/rodrigo0109',
-        linkedin: 'https://linkedin.com/in/rodrigo-perez-54073314b'
+        name: 'Florencia Taburelli',
+        text: `"Working with Rodrigo is very easy, he generates an environment of support and camaraderie, providing creative ideas and concrete solutions."`,
+        textEs: `"Trabajar con Rodrigo es muy fácil, genera un entorno de apoyo y compañerismo, aportando ideas creativas y soluciones concretas."`,
+        img: Flor,
+        github: 'https://github.com/FlorenciaTaburelli',
+        linkedin: 'https://www.linkedin.com/in/florencia-taburelli/'
+    },
+    {
+        name: 'Martin Barreiro',
+        text: `"It was a great experience working with Rodrigo, super responsible, great team skills and a great developer."`,
+        textEs: `"Fue una gran experiencia trabajar con Rodrigo, super responsable, excelentes habilidades en equipo y un gran desarrollador."`,
+        img: Martin,
+        github: 'https://github.com/martinjbh',
+        linkedin: 'https://www.linkedin.com/in/barreiro-martin'
     }
 ]

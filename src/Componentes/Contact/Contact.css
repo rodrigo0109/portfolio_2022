@@ -107,6 +107,10 @@
     color: #040C18;
     border: none;
     margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.btn_send:hover {
+    background: #1099e9;
 }
 
 .section {
@@ -119,7 +123,7 @@
 
 .testimonial_container {
     width: 350px;
-    height: 400px;
+    height: 420px;
     background: #040C18;
     border-radius: 15px;
     /* border: 1px solid red; */
@@ -152,11 +156,29 @@
 /*     border: 1px solid red; */
 }
 
+.testimonial_hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
 .testimonial_name {
     font-weight: 800;
     font-size: 22px;
     font-style: normal;
     color: #49AEEA;
+}
+
+.testimonial_prof {
+    font-weight: 800;
+    font-size: 16px;
+    font-style: normal;
+    color: #1099e9;
+    position: absolute;
+    top: 40px;
 }
 
 .testimonial_icons {
@@ -190,10 +212,14 @@
         width: 300px;
     }
     .testimonial_container {
-        height: 320px;
+        height: 400px;
     }
     .profile_container img {
-        width: 60px;
+        width: 80px;
+    }
+    .testimonial_prof {
+        font-size: 14px;
+        top: 25px;
     }
     .testimonial_name {
         font-size: 18px;
@@ -201,9 +227,11 @@
     .testimonial_text {
         height: 120px;
         font-size: 16px;
+       /*  margin-top: 30px; */
     }
     .testimonial_icons {
         font-size: 22px;
+        margin-top: 70px;
     }
 }
 
