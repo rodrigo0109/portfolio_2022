@@ -1,12 +1,24 @@
 import Countries from '../../videos/card_countries.mp4'
 import Weather from '../../videos/card_weather.mp4'
+import Weedical from '../../videos/weedical_portfolio.mp4'
 import CountriesImg from '../../images/countries.png'
 import WeatherImg from '../../images/weather.png'
+import WeedicalImg from '../../images/weedical.png'
 import Gianfranco from '../../images/devs/gian.jpeg'
 import Flor from '../../images/devs/flor.jpeg'
 import Martin from '../../images/devs/martin.jpeg'
 
 export const projects = [
+    {
+        title: 'Weedical Store',
+        titleEs: 'Weedical Store',
+        text: 'Created with React, Redux, Node, Express, Sequelize, Sass and other integrations',
+        textEs: 'Creado con React, Redux, Node, Express, Sequelize, Saass y más integraciones',
+        video: Weedical,
+        img: WeedicalImg,
+        gitHub: 'https://github.com/Proyecto-Final-psg',
+        demo: 'https://weedical.netlify.app/'
+    },
     {
         title: 'Countries',
         titleEs: 'Países',

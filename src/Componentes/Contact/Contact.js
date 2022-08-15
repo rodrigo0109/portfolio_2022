@@ -58,7 +58,7 @@ const Contact = ({ language }) => {
                     }
                     <div className='testimonial_icons'>
                         <a href={'https://github.com/rodrigo0109'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
-                        <a href={'https://www.linkedin.com/in/rodrigo-perez-54073314b'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
+                        <a href={'https://www.linkedin.com/in/rodrigo-perez-full-stack-developer'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
                         <a href={'https://twitter.com/RodriiPerezz'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faTwitter} /></a>
                     </div>
                     <form className='form' method="POST" id="form" name="contact-form" data-netlify='true'>
