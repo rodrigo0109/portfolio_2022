@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import './Card.css'
 
 const Card = ({title, titleEs, text, textEs, video, img, gitHub, demo, language}) => {
+
+  const [show, setShow] = useState(false);
 
   return (
     <div className='card'>
@@ -16,7 +20,8 @@ const Card = ({title, titleEs, text, textEs, video, img, gitHub, demo, language}
         <div className='card_content'>
             <div className='text_container-card'>
               <h3>{language === 'EN' ? title : titleEs}</h3>
-              <p>{language === 'EN' ? text : textEs}</p>
+              <p className={`text-card${show ? '-show' : ''}`}>{language === 'EN' ? text : textEs}</p>
+              <a className='btn-read' onClick={() => { setShow(!show) }}><FontAwesomeIcon icon={show ? faAngleUp : faAngleDown} /></a>
             </div>
             <div className='btn_container'>
                 <a href={gitHub} target='_blank' rel="noopener noreferrer" className='btn_code'>GitHub</a>
