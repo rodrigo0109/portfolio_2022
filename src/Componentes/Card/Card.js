@@ -21,7 +21,7 @@ const Card = ({title, titleEs, text, textEs, video, img, gitHub, demo, language}
             <div className='text_container-card'>
               <h3>{language === 'EN' ? title : titleEs}</h3>
               <p className={`text-card${show ? '-show' : ''}`}>{language === 'EN' ? text : textEs}</p>
-              <a className='btn-read' onClick={() => { setShow(!show) }}><FontAwesomeIcon icon={show ? faAngleUp : faAngleDown} /></a>
+              <a href="#" className='btn-read' onClick={() => { setShow(!show) }}><FontAwesomeIcon icon={show ? faAngleUp : faAngleDown} /></a>
             </div>
             <div className='btn_container'>
                 <a href={gitHub} target='_blank' rel="noopener noreferrer" className='btn_code'>GitHub</a>
