@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from '../../images/pic4.png'
 import Resume from '../../file/resume.pdf'
-import Cv from '../../file/cv.pdf'
 import './Hero.css'
 import { useNav } from '../../hooks/useNav'
 
