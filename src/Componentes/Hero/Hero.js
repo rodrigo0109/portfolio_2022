@@ -28,7 +28,7 @@ const Hero = ({language, setLanguage}) => {
         }
         <div className='subtitle-action_container'>
           <h3>Full Stack Developer</h3>
-          <a href={language === 'EN' ? Resume : Cv} download={language === 'EN' ? "Resume_Rodrigo_Perez.pdf" : 'CV_Rodrigo_Perez.pdf'} target="_blank" rel="noopener noreferrer">{ language === 'EN' ? 'Resume' : 'CV' }</a>
+          <a href={language === 'EN' ? Resume : Resume} download={language === 'EN' ? "Rodrigo_Perez_FullStackDeveloper.pdf" : 'Rodrigo_Perez_FullStackDeveloper.pdf'} target="_blank" rel="noopener noreferrer">{ language === 'EN' ? 'Resume' : 'CV' }</a>
         </div>
       </div>
       <div className='img_intro_container' data-aos="fade-up">
