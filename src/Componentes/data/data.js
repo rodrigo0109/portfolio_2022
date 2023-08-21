@@ -1,15 +1,27 @@
 import Countries from '../../videos/card_countries.mp4'
 import FreeForest from '../../videos/card_freeforest.mp4'
 import Weedical from '../../videos/weedical_portfolio.mp4'
+import EvaPerez from '../../videos/evangelinaperez.mp4'
 import CountriesImg from '../../images/countries.png'
 import FreeForestImg from '../../images/freeforest.png'
 import WeedicalImg from '../../images/weedical.png'
+import EvaPerezImg from '../../images/evaperez.png'
 import Gianfranco from '../../images/devs/gian.jpeg'
 import Flor from '../../images/devs/flor.jpeg'
 import Martin from '../../images/devs/martin.jpeg'
 
 export const projects = [
     {
+        title: 'Singing lessons',
+        titleEs: 'Clases de canto',
+        text: 'Development of landing page about a singing teacher. Created with NextJs, Javascript and TailwindCSS',
+        textEs: 'Desarrollo de landing page para una profesora de canto. Creado con NextJs, Javascript y TailwindCSS',
+        video: EvaPerez,
+        img: EvaPerezImg,
+        gitHub: '',
+        demo: 'https://www.evangelinaperez.com/'
+    },
+/*     {
         title: 'Free Forest',
         titleEs: 'Free Forest',
         text: 'Development of a complete CRUD on a fictitious video game. Made as a group with four other developers. Scrum methodology was used together with Trello, Figma, AWS and Docker. My work was oriented to the Front-end part and end-to-end testing. Created with React, Redux, Node, Express, Sequelize, Sass, Jest, Cypress, AWS',
@@ -18,7 +30,7 @@ export const projects = [
         img: FreeForestImg,
         gitHub: 'https://github.com/orgs/delosandesdevs/repositories',
         demo: 'https://www.delosandes.xyz/'
-    },
+    }, */
     {
         title: 'Weedical Store',
         titleEs: 'Weedical Store',
@@ -29,7 +41,7 @@ export const projects = [
         gitHub: 'https://github.com/Proyecto-Final-psg',
         demo: 'https://weedical.netlify.app/'
     },
-    {
+   /*  {
         title: 'Countries',
         titleEs: 'Países',
         text: 'Development of an application on countries, where you can create tourist activities. This was created as an individual evaluation of the soyHenry bootcamp. Created with React, Redux, Node, Express, Sequelize and pure Css',
@@ -38,7 +50,7 @@ export const projects = [
         img: CountriesImg,
         gitHub: 'https://github.com/rodrigo0109/PI-Countries-PT-05',
         demo: 'https://countries-rodrigo-perez.netlify.app'
-    }
+    } */
 ]
 
 export const testimonial = [

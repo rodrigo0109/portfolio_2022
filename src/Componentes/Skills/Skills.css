@@ -134,10 +134,11 @@
 @media screen and (max-width:450px) {
     .skills {
         height: auto;
+        min-height: 1200px;
     }
 
     .skills_container {
-        height: 900px;
+        height: 1100px;
     }
 
     .skill_title {

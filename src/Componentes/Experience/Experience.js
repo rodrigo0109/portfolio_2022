@@ -16,9 +16,9 @@ const Experience = ({ language }) => {
       <div className='cards_container' data-aos="fade-up" data-aos-duration="2000">
         {
           language === 'EN' ?
-            <h1>Projects</h1>
+            <h1>Experience</h1>
             :
-            <h1>Proyectos</h1>
+            <h1>Experiencia</h1>
         }
         {
           window.innerWidth > 450 ?

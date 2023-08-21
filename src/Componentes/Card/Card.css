@@ -93,7 +93,7 @@
     justify-content: space-between;
 }
 
-.btn_code, .btn_demo {
+.btn_code, .btn_demo, .btn_demo_alone {
     width: 100px;
     height: 40px;
     line-height: 40px;
@@ -125,9 +125,20 @@
     background: #1099e9;
 }
 
+.btn_demo_alone {
+    background: #49AEEA;
+    color: #040C18;
+    border: none;
+    transition: all 0.3s ease;
+    margin: auto;
+}
+.btn_demo_alone:hover {
+    background: #1099e9;
+}
 
 @media screen and (max-width:700px) {
     .card {
+        margin-top: 40px;
         margin-bottom: 40px;
     }
 }

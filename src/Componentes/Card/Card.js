@@ -24,8 +24,11 @@ const Card = ({title, titleEs, text, textEs, video, img, gitHub, demo, language}
               <button className='btn-read' onClick={() => { setShow(!show) }}><FontAwesomeIcon icon={show ? faAngleUp : faAngleDown} /></button>
             </div>
             <div className='btn_container'>
+              {
+                gitHub !== '' &&
                 <a href={gitHub} target='_blank' rel="noopener noreferrer" className='btn_code'>GitHub</a>
-                <a href={demo} target='_blank' rel="noopener noreferrer" className='btn_demo'>{language === 'EN' ? 'Live Demo' : 'Ver Demo'}</a>
+              }
+                <a href={demo} target='_blank' rel="noopener noreferrer" className={`${gitHub === '' ? 'btn_demo_alone' : 'btn_demo'}`}>{language === 'EN' ? 'Live Demo' : 'Ver Demo'}</a>
             </div>
         </div>
     </div>

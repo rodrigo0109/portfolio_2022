@@ -14,14 +14,22 @@ const About = ({ language }) => {
           language === 'EN' ?
             <>
               <h1>About</h1>
-              <p>Hi, I'm Rodrigo, Full Stack Developer. I consider myself a responsible, communicative person with good performance both for
-                teamwork as individual. My goal is to get my first opportunity in the IT sector to grow as a professional, contributing my knowledge and learning from my work team. I am currently finishing my first year as a Systems Analyst and concluding the soyHenry bootcamp. If you want to know more I invite you to write me in the contact section.</p>
+              <p>
+                Hi, I'm Rodrigo, Full Stack Developer and I work as a FrontEnd developer at <a className='link' href='https://www.stamm.bio/' target='_blank'>Stämm Biotech</a>.
+                 I consider myself a responsible, communicative person with good performance both for teamwork and individually. 
+                 My goal is to find new challenges to grow as a professional, contributing my knowledge and learning from my work team.
+                I am currently a first-year Systems Analyst student. If you want to know more, I invite you to write to me in the contact section.
+              </p>
             </>
             :
             <>
               <h1>Sobre mí</h1>
-              <p>¡Hola!, soy Rodrigo, desarrollador Full Stack. Me considero una persona responsable, comunicativa y con buen desempeño tanto para
-                el trabajo en equipo como individual.  Mi objetivo es lograr mi primera oportunidad en el sector IT  para crecer como profesional, aportando mis conocimientos y aprendiendo de mi equipo de trabajo. Actualmente estoy finalizando primer año de Analista de Sistemas y concluyendo el bootcamp soyHenry. Si queres saber más te invito a escribirme en la seccion de contacto. </p>
+              <p>
+                Hola, soy Rodrigo, Desarrollador Full Stack y trabajo como desarrollador FrontEnd para <a className='link' href='https://www.stamm.bio/' target='_blank'>Stämm Biotech</a>. 
+                Me considero una persona responsable, comunicativa y con buen desempeño tanto para el trabajo en equipo como individual. 
+                Mi objetivo es encontrar nuevos desafíos para crecer como profesional, aportando mis conocimientos y aprendiendo de mi equipo de trabajo. 
+                Actualmente soy estudiante de primer año de Analista de Sistemas. Si quieres saber más te invito a que me escribas en la sección de contacto. 
+              </p>
             </>
         }
         <div className='img_container'>
