@@ -1,9 +1,9 @@
-import Countries from '../../videos/card_countries.mp4'
-import FreeForest from '../../videos/card_freeforest.mp4'
+/* import Countries from '../../videos/card_countries.mp4'
+import FreeForest from '../../videos/card_freeforest.mp4' */
 import Weedical from '../../videos/weedical_portfolio.mp4'
 import EvaPerez from '../../videos/evangelinaperez.mp4'
-import CountriesImg from '../../images/countries.png'
-import FreeForestImg from '../../images/freeforest.png'
+/* import CountriesImg from '../../images/countries.png'
+import FreeForestImg from '../../images/freeforest.png' */
 import WeedicalImg from '../../images/weedical.png'
 import EvaPerezImg from '../../images/evaperez.png'
 import Gianfranco from '../../images/devs/gian.jpeg'

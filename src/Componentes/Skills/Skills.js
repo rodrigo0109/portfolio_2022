@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBootstrap, faCss3, faHtml5, faJs, faReact, faNode, faCode } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3, faHtml5, faJs, faReact, faNode } from '@fortawesome/free-brands-svg-icons';
 import Image from '../../images/postgre.png'
 import Image2 from '../../images/redux.png'
 import Image3 from '../../images/express.png'
