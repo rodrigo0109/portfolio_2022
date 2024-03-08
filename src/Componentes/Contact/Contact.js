@@ -57,7 +57,7 @@ const Contact = ({ language }) => {
                             <h1>Hablemos</h1>
                     }
                     <div className='testimonial_icons'>
-                        <a href={'https://github.com/rodrigo0109'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
+                        <a href={'https://github.com/rodrigoperez01093'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faGithub} /></a>
                         <a href={'https://www.linkedin.com/in/rodrigo-perez-full-stack-developer'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faLinkedin} /></a>
                         <a href={'https://twitter.com/RodriiPerezz'} target='_blank' rel="noopener noreferrer"><FontAwesomeIcon className='icon' icon={faTwitter} /></a>
                     </div>
